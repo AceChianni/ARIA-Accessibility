@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA</title>
+  </head>
+  <body>
+    <main>
+      <h1>Web Accessibility with ARIA</h1>
+
+      <p>
+        Web Accessibility is important for websites and web applications to be
+        usable by people with disabilities. ARIA (Accessible Rich Internet
+        Applications) is a set of attributes that are added to HTML elements to
+        provide additional information and increase accessibility of web
+        content.
+      </p>
+
+      <h2>ARIA Tags in Action:</h2>
+
+      <!-- Navigation Section with ARIA Role -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h2>Input Field with ARIA Attributes:</h2>
+
+      <!-- Input Field with ARIA Attributes -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" aria-label="Enter your username" />
+
+      <h2>ARIA Roles, aria-hidden, aria-label, and aria-labelledby:</h2>
+
+      <!-- ARIA Roles and Attributes Example -->
+      <div role="region" aria-labelledby="sectionHeading">
+        <h3 id="sectionHeading">Important Section</h3>
+        <p aria-hidden="true">
+          This paragraph is hidden from assistive technologies.
+        </p>
+        <p aria-label="This is a labeled paragraph">
+          This paragraph has a labeled description.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
